@@ -1,0 +1,37 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven{
+            url uri('repo')
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath 'org.aspectj:aspectjtools:1.8.13'
+        classpath 'deadline.plugin:plugin:1.0.0'
+        classpath "io.realm:realm-gradle-plugin:4.3.1"
+        classpath "io.realm:realm-transformer:4.3.1"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven{
+            url uri('repo')
+        }
+    }
+}
+
+task compileJava {}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
