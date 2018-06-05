@@ -18,6 +18,8 @@ public class App extends Application {
         context = this;
     }
 
+
+
     public static Context getContext() {
         return context;
     }
