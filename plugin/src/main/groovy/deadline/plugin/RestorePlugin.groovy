@@ -1,6 +1,5 @@
 package deadline.plugin
 
-import deadline.plugin.asm.AsmRestoreTransform
 import deadline.plugin.javassist.JavassistRestoreTransform
 import org.gradle.api.Plugin
 import org.gradle.api.Project

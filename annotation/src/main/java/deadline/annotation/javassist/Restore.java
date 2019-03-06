@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
  *
  * 结合javassist实现
  */
-@Retention(RetentionPolicy.SOURCE)
+@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface Restore {
 
